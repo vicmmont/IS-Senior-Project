@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ISSeniorProject">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Senior Project</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./client/css/styles.css">
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+
+    <!-- Created JS files-->
+	<script src="./client/app.js"></script>
+	<script src="./client/config.js"></script>
+	<script src="./client/views/header/HeaderController.js"></script>
+	<script src="./client/views/homepage/HomepageController.js"></script>
+	<script src="./client/views/interview1/Interview1Controller.js"></script>
+	<script src="./client/views/interview2/Interview2Controller.js"></script>
+	<script src="./client/views/quiz1/Quiz1Controller.js"></script>
+	<script src="./client/views/quiz2/Quiz2Controller.js"></script>
+	<script src="./client/services/ParticipantDataService.js"></script>
+
+</head>
+<body>
+	<div ng-controller="HeaderController as model">
+		<div ng-include="'./client/views/header/header.html'"></div>
+	</div>
+	
+	<!-- Home Page -->
+	<div ng-controller="HomepageController as model">
+		<div ng-view="'./client/views/overview/homepage.html'"></div>
+	</div>
+</body>
+</html>

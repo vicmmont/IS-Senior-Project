@@ -1,0 +1,22 @@
+{
+  "name": "is-senior-project",
+  "version": "1.0.0",
+  "description": "Senior Project for IS4900",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicmmont/IS-Senior-Project.git"
+  },
+  "author": "Victor Monterroso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicmmont/IS-Senior-Project/issues"
+  },
+  "homepage": "https://github.com/vicmmont/IS-Senior-Project#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
