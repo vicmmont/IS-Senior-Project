@@ -10,19 +10,15 @@
         vm.participantId;
 
     	vm.onStartExperimentClick = function() {
-    		var group = Math.floor(Math.random() * 2);
-            
+    		var group = Math.floor((Math.random() * 2) + 1);
+
             ParticipantDataService
                 .setParticipantId(vm.participantId);
 
             ParticipantDataService
                 .setGroup(group);
 
-            if (group === 0) {
-
-            } else {
-                
-            }
+            $location.url("/interview1?group=" + group);
     	}
     }
 })();
