@@ -12,6 +12,11 @@
                 controller: "HomepageController",
                 controllerAs: "model"
             })
+            .when("/demographics", {
+                templateUrl: "./client/views/demographics/demographics.html",
+                controller: "DemographicsController",
+                controllerAs: "model"
+            })
             .when("/interview1", {
                 templateUrl: "./client/views/interview1/interview1.html",
                 controller: "Interview1Controller",
@@ -23,8 +28,8 @@
                 controllerAs: "model"
             }) 
             .when("/survey", {
-                templateUrl: "./client/views/survey/quiz.html",
-                controller: "SurveymController",
+                templateUrl: "./client/views/survey/survey.html",
+                controller: "SurveyController",
                 controllerAs: "model"
             })   
             .when("/interview2", {
@@ -36,7 +41,12 @@
                 templateUrl: "./client/views/quiz2/quiz2.html",
                 controller: "Quiz2Controller",
                 controllerAs: "model"
-            })          
+            })
+            .when("/goodbye", {
+                templateUrl: "./client/views/goodbye/goodbye.html",
+                controller: "GoodbyeController",
+                controllerAs: "model"
+            })            
             .otherwise({
                 redirectTo: "/home"
             });

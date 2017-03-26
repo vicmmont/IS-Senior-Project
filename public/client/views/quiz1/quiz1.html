@@ -3,88 +3,526 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Quiz #1</h1>
+		<h1 class="text-center">Quiz #1</h1>
 
+		<p class="quiz-question">	1. What president was mentioned at the start of the interview? </p>
 		<div class="row">
-			<div class="col-xs-12">
-				<p>
-					1. What president was mentioned at the start of the interview?
-				</p>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="presidentOptions" value="Ronald Reagan" ng-model="model.question1">
+						Ronald Reagan
+					</label>
+				</div>
 			</div>
-			<div class="col-xs-12">
-				<label class="radio-inline col-xs-3">
-					<input type="radio" name="presidentOptions" id="q1a1" value="Ronald Reagan">Ronald Reagan
-				</label>
-				<label class="radio-inline col-xs-3">
-					<input type="radio" name="presidentOptions" id="q1a2" value="Franklin D. Roosevelt">Franklin D. Roosevelt
-				</label>
-				<label class="radio-inline col-xs-3">
-					<input type="radio" name="presidentOptions" id="q1a3" value="Theodore Roosevelt">Theodore Roosevelt
-				</label>
-				<label class="radio-inline col-xs-3">
-					<input type="radio" name="presidentOptions" id="q1a4" value="Woodrow Wilson">Woodrow Wilson
-				</label>
-
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="presidentOptions" value="Franklin D. Roosevelt" ng-model="model.question1">Franklin D. Roosevelt
+					</label>
+				</div>
 			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="presidentOptions" value="Theodore Roosevelt" ng-model="model.question1">Theodore Roosevelt
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="presidentOptions" value="Woodrow Wilson" ng-model="model.question1">Woodrow Wilson
+					</label>
+				</div>
+			</div>	
+		</div>			
+		
+		<p class="quiz-question"> 2. Out of 100 times, how many times might the voice of the people be “the voice of God”? </p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="countOptions" id="q2a1" value="49" ng-model="model.question2">49
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label class="radio-inline">
+						<input type="radio" name="countOptions" id="q2a2" value="50" ng-model="model.question2">50
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="countOptions" id="q2a3" value="51" ng-model="model.question2">51
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="countOptions" id="q2a4" value="100" ng-model="model.question2">100
+					</label>
+				</div>
+			</div>
+		</div>
 
-		<p>
-			2. Out of 100 times, how many times might the voice of the people be “the voice of God”?
-		</p>
-
-		<label class="radio-inline">
-			<input type="radio" name="countOptions" id="q2a1" value="49">49
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="countOptions" id="q2a2" value="50">50
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="countOptions" id="q2a3" value="51">51
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="countOptions" id="q2a4" value="100">100
-		</label>
-
-		<p>
+		<p class="quiz-question">
 			3. President Obama attributed the result of the election to _________ .
 		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="electionOptions" id="q3a1" value="Democrats not staying on message" ng-model="model.question3">Democrats not staying on message
+					</label>
+				</div>
+			</div>
 
-		<label class="radio-inline">
-			<input type="radio" name="electionOptions" id="q3a1" value="Democrats not staying on message
-">Democrats not staying on message
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="electionOptions" id="q3a2" value="Hillary’s email scandal
-">Hillary’s email scandal
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="electionOptions" id="q3a3" value="Democrats not showing up to the polls
-">Democrats not showing up to the polls
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="electionOptions" id="q3a4" value="Russian hacking
-">Russian hacking
-		</label>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="electionOptions" id="q3a2" value="Hillary’s email scandal" ng-model="model.question3">Hillary’s email scandal
+					</label>
+				</div>
+			</div>
 
-		<p>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="electionOptions" id="q3a3" value="Democrats not showing up to the polls" ng-model="model.question3">Democrats not showing up to the polls
+					</label>
+				</div>
+			</div>
+
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="electionOptions" id="q3a4" value="Russian hacking" ng-model="model.question3">Russian hacking
+					</label>					
+				</div>
+			</div>
+		</div>				
+
+		<p class="quiz-question">
 			4. When talking about the current political landscape of America, what structural problem did Obama point to?
 		</p>
 
-		<label class="radio-inline">
-			<input type="radio" name="problemOptions" id="q4a1" value="Population demographics
-">Population demographics
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="problemOptions" id="q4a2" value="Population distribution
-">Population distribution
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="problemOptions" id="q4a3" value="Population age
-">Population age
-		</label>
-		<label class="radio-inline">
-			<input type="radio" name="problemOptions" id="q4a4" value="Population size
-">Population size
-		</label>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="problemOptions" id="q4a1" value="Population demographics" ng-model="model.question4">Population demographics
+					</label>			
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="problemOptions" id="q4a2" value="Population distribution" ng-model="model.question4">Population distribution
+					</label>	
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label class="radio-inline">
+						<input type="radio" name="problemOptions" id="q4a3" value="Population age" ng-model="model.question4">Population age
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="problemOptions" id="q4a4" value="Population size" ng-model="model.question4">Population size
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			5. In defending the idea that the Democratic Party’s platform resonates with Americans, President Obama cited _________ as a specific example of a policy supported by most Americans.
+		</p>
+
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="platformOptions" id="q5a1" value="Obamacare" ng-model="model.question5">Obamacare
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label class="radio-inline">
+						<input type="radio" name="platformOptions" id="q5a2" value="The minimum wage" ng-model="model.question5">The minimum wage
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label class="radio-inline">
+						<input type="radio" name="platformOptions" id="q5a3" value="Climate regulation" ng-model="model.question5">Climate regulation
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label class="radio-inline">
+						<input type="radio" name="platformOptions" id="q5a4" value="Amnesty" ng-model="model.question5">Amnesty
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			6. Obama regretted the Democrats’ failure to connect well with what group?
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="groupOptions" id="q6a1" value="People from the South" ng-model="model.question6">People from the South
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="groupOptions" id="q6a2" value="People from the Midwest" ng-model="model.question6">People from the South
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="groupOptions" id="q6a3" value="People from suburban areas" ng-model="model.question6">People from suburban areas
+					</label>		
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="groupOptions" id="q6a4" value="People from rural areas" ng-model="model.question6">People from rural areas
+					</label>		
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			7. What did Obama mean by “people need to show up”?
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="showUpOptions" id="q7a1" value="People need to go to the polls for more than just the presidential elections" ng-model="model.question7">People need to go to the polls for more than just the presidential elections
+					</label>			
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="showUpOptions" id="q7a2" value="People need to be more willing to become activists" ng-model="model.question7">People need to be more willing to become activists
+					</label>		
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="showUpOptions" id="q7a3" value="People should engage and speak with people of different viewpoints and backgrounds" ng-model="model.question7">People should engage and speak with people of different viewpoints and backgrounds
+					</label>		
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="showUpOptions" id="q7a4" value="People should be donating more to political campaigns they agree with" ng-model="model.question7">People should be donating more to political campaigns they agree with
+					</label>		
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			8. In speaking on his political experience dealing with the separation of rural communities with urban ones, President Obama talked about his experience running for _______________________.
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="runningOptions" id="q8a1" value="Mayor of Chicago" ng-model="model.question8">Mayor of Chicago
+					</label>			
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="runningOptions" id="q8a2" value="Governor of Illinois" ng-model="model.question8">Governor of Illinois
+					</label>		
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="runningOptions" id="q8a3" value="The House of Representatives from Illinois" ng-model="model.question8">The House of Representatives from Illinois
+					</label>		
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="runningOptions" id="q8a4" value="The U.S. Senate" ng-model="model.question8">The U.S. Senate
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			9. What state did Obama cite as an example of him speaking to a variety of different types of people?
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="stateOptions" id="q9a1" value="Illinois" ng-model="model.question9">Illinois
+					</label>		
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="stateOptions" id="q9a2" value="Iowa" ng-model="model.question9">Iowa
+					</label>		
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="stateOptions" id="q9a3" value="Michigan" ng-model="model.question9">Michigan
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="stateOptions" id="q9a4" value="Missouri" ng-model="model.question9">Missouri
+					</label>		
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			10. What has happened to the overall success of the Democratic Party in the time Obama has been in office?
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="successOptions" id="q10a1" value="It has achieved unprecedented success nationwide" ng-model="model.question10">It has achieved unprecedented success nationwide
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="successOptions" id="q10a2" value="The party has won a few more seats nationwide" ng-model="model.question10">The party has won a few more seats nationwide
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="successOptions" id="q10a3" value="The party has lost a few more seats nationwide" ng-model="model.question10">The party has lost a few more seats nationwide
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="successOptions" id="q10a4" value="The party has lost a significant number of seats nationwide" ng-model="model.question10">The party has lost a significant number of seats nationwide
+					</label>
+				</div>
+			</div>
+		</div>
+		
+		<p class="quiz-question"> 
+			11. In discussing the success of the Republican Party, Obama mentions that they have received funding from which major group?
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="fundingOptions" id="q11a1" value="The Koch Brothers" ng-model="model.question11">The Koch Brothers
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="fundingOptions" id="q11a2" value="Lobbyists" ng-model="model.question11">Lobbyists
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="fundingOptions" id="q11a3" value="Wall Street" ng-model="model.question11">Wall Street
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="fundingOptions" id="q11a4" value="Oil Companies" ng-model="model.question11">Oil Companies
+					</label>
+				</div>
+			</div>
+		</div>
+	
+		<p class="quiz-question">
+			12. Obama believes that the Democratic Party tends to have a policy bias towards
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="biasOptions" id="q12a1" value="Climate policy and environmental issues" ng-model="model.question12">Climate policy and environmental issues
+					</label>		
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="biasOptions" id="q12a2" value="National and international issues" ng-model="model.question12">National and international issues
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="biasOptions" id="q12a3" value="Economic and monetary issues" ng-model="model.question12">Economic and monetary issues
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="biasOptions" id="q12a4" value="Urban and metropolitan issues" ng-model="model.question12">Urban and metropolitan issues
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			13. How did Obama describe the environment of his administration was in when he first entered office?
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="environmentOptions" id="q13a1" value="It was a huge crisis" ng-model="model.question13">It was a huge crisis
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="environmentOptions" id="q13a2" value="It was chaos" ng-model="model.question13">It was chaos
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="environmentOptions" id="q13a3" value="It was overwhelming" ng-model="model.question13">It was overwhelming
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="environmentOptions" id="q13a4" value="It was complex" ng-model="model.question13">It was complex
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			14. What role does Obama expect in the Democratic Party after he leaves office?
+		</p>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="roleOptions" id="q14a1" value="Giving advice to the party" ng-model="model.question14">Giving advice to the party
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="roleOptions" id="q14a2" value="Recruiting new candidates" ng-model="model.question14">Recruiting new candidates
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label class="radio-inline">
+						<input type="radio" name="roleOptions" id="q14a3" value="Speaking at rallies" ng-model="model.question14">Speaking at rallies
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="roleOptions" id="q14a4" value="Fundraising for party candidates" ng-model="model.question14">Fundraising for party candidates
+					</label>		
+				</div>
+			</div>
+		</div>
+
+		<p class="quiz-question">
+			15. What did Obama promise Michelle after leaving office?
+		</p>
+
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="promiseOptions" id="q15a1" value="A vacation" ng-model="model.question15">A vacation
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="promiseOptions" id="q15a2" value="Allowing her to advance her own career" ng-model="model.question15">Allowing her to advance her own career
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="promiseOptions" id="q15a3" value="A puppy" ng-model="model.question15">A puppy
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="radio">
+					<label>
+						<input type="radio" name="promiseOptions" id="q15a4" value="That he would spend more time with her" ng-model="model.question15">That he would spend more time with her
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-4 form-element-margin">
+				<button class="btn btn-lg btn-block btn-primary" ng-click="model.next()">Next</button>
+			</div>
+		</div>
 
 	</div>
 </body>

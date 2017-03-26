@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vicmmont/IS-Senior-Project#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "json2csv": "^3.7.3"
   }
 }

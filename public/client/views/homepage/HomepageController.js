@@ -18,7 +18,7 @@
             ParticipantDataService
                 .setGroup(group);
 
-            $location.url("/interview1?group=" + group);
+            $location.url("/demographics?group=" + group);
     	}
     }
 })();

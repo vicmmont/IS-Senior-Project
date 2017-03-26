@@ -2,5 +2,5 @@
 
 (function(){
     angular
-        .module('ISSeniorProject', ['ngRoute']);
+        .module('ISSeniorProject', ['ngRoute', 'ngJsonExportExcel']);
 })();

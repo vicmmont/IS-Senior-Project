@@ -8,6 +8,8 @@ body {
 	margin-bottom: 10px;
 }
 
-.interviewer {
+.interviewer,
+.survey-question,
+.quiz-question {
 	font-weight: bold;
 }

@@ -1,0 +1,127 @@
+<html>
+<head>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Demographic Questions</h1>
+
+		<p class="survey-question">1. What is your gender?</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">				
+					<label>	
+						<input type="radio" name="genderOptions" value="Female" ng-model="model.gender">Female
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">				
+					<label>	
+						<input type="radio" name="genderOptions" value="Male" ng-model="model.gender">Male
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">2. What is your age?</p>
+		<div class="row">
+			<div class="col-xs-1">
+				<div class="radio">				
+					<label>	
+						<input type="radio" name="ageOptions" value="18" ng-model="model.age">18
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-1">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="ageOptions" value="19" ng-model="model.age">19
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-1">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="ageOptions" value="20" ng-model="model.age">20
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-1">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="ageOptions" value="21" ng-model="model.age">21
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-1">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="ageOptions" value="22" ng-model="model.age">22
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-1">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="ageOptions" value="23" ng-model="model.age">23
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-1">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="ageOptions" value="24" ng-model="model.age">24
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">3. What is your current year at Northeastern?</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="yearOptions" value="Freshman" ng-model="model.year">Freshman
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="yearOptions" value="Sophomore" ng-model="model.year">Sophomore
+					</label>
+				</div>
+			</div>		
+			<div class="col-xs-2">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="yearOptions" value="Middler" ng-model="model.year">Middler
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="yearOptions" value="Junior" ng-model="model.year">Junior
+					</label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+					<label>	
+						<input type="radio" name="yearOptions" value="Senior" ng-model="model.year">Senior
+					</label>
+				</div>
+			</div>
+		</div>	
+
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-4">
+				<button class="btn btn-lg btn-block btn-primary" ng-click="model.next()">Submit</button>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,1 +1,369 @@
-<p>Survey</p>
+<html>
+<head>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Survey</h1>
+		{{ model.question1 }}
+
+		<p class="survey-question">1. I was pleased with the visual experience of this interview.</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="visualExperienceOptions" value="1" ng-model="model.question1">
+				    Strongly disagree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="visualExperienceOptions" value="2" ng-model="model.question1">
+				    Slightly disagree
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="visualExperienceOptions" value="3" ng-model="model.question1">
+				    No opinion
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="visualExperienceOptions" value="4" ng-model="model.question1">
+				    Slightly agree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="visualExperienceOptions" value="5" ng-model="model.question1">
+				    Strongly agree
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">2. I got distracted during the course of this interview. </p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="distractedOptions" value="5" ng-model="model.question2">
+				    Strongly disagree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="distractedOptions" value="4" ng-model="model.question2">
+				    Slightly disagree
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="distractedOptions" value="3" ng-model="model.question2">
+				    No opinion
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="distractedOptions" value="2" ng-model="model.question2">
+				    Slightly agree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="distractedOptions" value="1" ng-model="model.question2">
+				    Strongly agree
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">3. I would continue seeing more interviews in this format.</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="formatOptions" value="1" ng-model="model.question3">
+				    Strongly disagree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="formatOptions" value="2" ng-model="model.question3">
+				    Slightly disagree
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="formatOptions" value="3" ng-model="model.question3">
+				    No opinion
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="formatOptions" value="4" ng-model="model.question3">
+				    Slightly agree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="formatOptions" value="5" ng-model="model.question3">
+				    Strongly agree
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">4. I would have continued seeing more of this interview.</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="moreOptions" value="1" ng-model="model.question4">
+				    Strongly disagree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="moreOptions" value="2" ng-model="model.question4">
+				    Slightly disagree
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="moreOptions" value="3" ng-model="model.question4">
+				    No opinion
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="moreOptions" value="4" ng-model="model.question4">
+				    Slightly agree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="moreOptions" value="5" ng-model="model.question4">
+				    Strongly agree
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">5. The visual experience of this interview was bad.</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="badVisualOptions" value="5" ng-model="model.question5">
+				    Strongly disagree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="badVisualOptions" value="4" ng-model="model.question5">
+				    Slightly disagree
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="badVisualOptions" value="3" ng-model="model.question5">
+				    No opinion
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="badVisualOptions" value="2" ng-model="model.question5">
+				    Slightly agree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="badVisualOptions" value="1" ng-model="model.question5">
+				    Strongly agree
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">6. This interview had my attention.</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="attentionOptions" value="1" ng-model="model.question6">
+				    Strongly disagree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="attentionOptions" value="2" ng-model="model.question6">
+				    Slightly disagree
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="attentionOptions" value="3" ng-model="model.question6">
+				    No opinion
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="attentionOptions" value="4" ng-model="model.question6">
+				    Slightly agree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="attentionOptions" value="5" ng-model="model.question6">
+				    Strongly agree
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">7. I would prefer to see interviews in a different format.</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="difFormatOptions" value="5" ng-model="model.question7">
+				    Strongly disagree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="difFormatOptions" value="4" ng-model="model.question7">
+				    Slightly disagree
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="difFormatOptions" value="3" ng-model="model.question7">
+				    No opinion
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="difFormatOptions" value="2" ng-model="model.question7">
+				    Slightly agree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="difFormatOptions" value="1" ng-model="model.question7">
+				    Strongly agree
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<p class="survey-question">8. I was glad that the interview was not longer.</p>
+		<div class="row">
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="longerOptions" value="5" ng-model="model.question8">
+				    Strongly disagree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="longerOptions" value="4" ng-model="model.question8">
+				    Slightly disagree
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="longerOptions" value="3" ng-model="model.question8">
+				    No opinion
+				  </label>
+				</div>	
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="longerOptions" value="2" ng-model="model.question8">
+				    Slightly agree
+				  </label>
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="radio">
+				  <label>
+				    <input type="radio" name="longerOptions" value="1" ng-model="model.question8">
+				    Strongly agree
+				  </label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-4">
+				<button class="btn btn-lg btn-block btn-primary form-element-margin" ng-click="model.submit()">Submit Survey</button>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
