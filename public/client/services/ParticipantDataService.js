@@ -7,14 +7,14 @@
     function participantDataService() {
         var data = {};
         var quiz1Answers = {
-            "Questio1" : "Theodore Roosevelt",
+            "Question1" : "Theodore Roosevelt",
             "Question2" : "51",
             "Question3" : "Democrats not showing up to the polls",
             "Question4" : "Population distribution",
             "Question5" : "The minimum wage",
             "Question6" : "People from rural areas",
             "Question7" : "People should engage and speak with people of different viewpoints and backgrounds",
-            "Question8" : "The House of Representatives from Illinois",
+            "Question8" : "The U.S. Senate",
             "Question9" : "Iowa",
             "Question10" : "The party has lost a significant number of seats nationwide",
             "Question11" : "The Koch Brothers",
